@@ -1,5 +1,4 @@
 ﻿using Dalamud.Configuration;
-using Dalamud.Plugin;
 using System;
 
 namespace AutoMarket;
@@ -8,6 +7,9 @@ namespace AutoMarket;
 public class Configuration : IPluginConfiguration
 {
     public int Version { get; set; } = 0;
+    public bool AdjustListings { get; set; } = false;
+    public bool PullGil { get; set; } = false;
+    public bool ReassignVentures { get; set; } = false;
 
     public void Save()
     {
